@@ -1,0 +1,45 @@
+.header-box {
+  overflow: hidden;
+  background-color: #4169E1;
+  color: white;
+  font-family: impact;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-box a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  line-height: 25px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.header-box a.logo {
+  float: left;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 25px;
+  text-decoration: underline;
+  pointer-events: none;
+}
+
+.header-box a:hover {
+  background-color: #0000CD;
+  color: white;
+}
+
+.header-box a.active {
+  background-color: #0000CD;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}

@@ -1,16 +1,15 @@
 @import "footer.css";
+@import "header.css";
 
 .container {
   display: grid;
-  grid-template-columns: repeat(6, 12em);
-  grid-template-rows: 90px 500px 350px;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 500px 350px;
   grid-template-areas:
-  "hd hd hd hd hd hd"
   "main main main main fix fix"
-  "art art art art art art"
-  "ft ft ft ft ft ft";
-  margin-left: 10px;
-  margin-right: 10px;
+  "art art art art art art";
+  margin-left: 5px;
+  margin-right: 5px;
   font-family: impact;
 }
 
@@ -23,50 +22,6 @@ h2 {
 h3 {
   color: #4169E1;
   text-align: center;
-}
-
-.header-box {
-  grid-area: hd;
-  overflow: hidden;
-  padding: 20px 10px;
-  background-color: #4169E1;
-  color: white;
-}
-
-.header-box a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  position: relative;
-  bottom: 60px;
-  line-height: 25px;
-  font-size: 18px;
-  border-radius: 4px;
-}
-
-.header-box a.logo {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  font-size: 30px;
-  line-height: 25px;
-  text-decoration: underline;
-}
-
-.header-box a:hover {
-  background-color: #0000CD;
-  color: white;
-}
-
-.header-box a.active {
-  background-color: #0000CD;
-  color: white;
-}
-
-.header-right {
-  float: right;
 }
 
 .main-content {
