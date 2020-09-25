@@ -1,89 +1,130 @@
+@import "footer.css";
+
 .container {
-      display: grid;
-      grid-template-columns: repeat(6, 12em);
-      grid-template-rows: 150px 500px 300px 200px;
-      grid-template-areas:
-      "hd hd hd hd hd hd"
-      "main main main main fix fix"
-      "art art art art art art"
-      "ft ft ft ft ft ft";
-      margin-left: 10px;
-      margin-right: 10px;
-      font-family: impact;
+  display: grid;
+  grid-template-columns: repeat(6, 12em);
+  grid-template-rows: 90px 500px 350px;
+  grid-template-areas:
+  "hd hd hd hd hd hd"
+  "main main main main fix fix"
+  "art art art art art art"
+  "ft ft ft ft ft ft";
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: impact;
+}
 
-  }
+h2 {
+  -webkit-text-stroke: .5px #4169E1; /* width and color */
+  color: white;
+  text-align: center;
+}
 
-  h2 {
-    -webkit-text-stroke: .5px #4169E1; /* width and color */
-    color: white;
-    text-align: center;
-  }
-
-  h3 {
-    color: #4169E1;
-    text-align: center;
-  }
-
-  img {
-    display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+h3 {
+  color: #4169E1;
+  text-align: center;
+}
 
 .header-box {
   grid-area: hd;
-  text-align: center;
+  overflow: hidden;
+  padding: 20px 10px;
   background-color: #4169E1;
   color: white;
+}
+
+.header-box a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  position: relative;
+  bottom: 60px;
+  line-height: 25px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.header-box a.logo {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 30px;
+  line-height: 25px;
   text-decoration: underline;
+}
+
+.header-box a:hover {
+  background-color: #0000CD;
+  color: white;
+}
+
+.header-box a.active {
+  background-color: #0000CD;
+  color: white;
+}
+
+.header-right {
+  float: right;
 }
 
 .main-content {
   grid-area: main;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   background-image: url("../images/Kane_and_Son.jpg");
   background-color: #E8E8E8;
 }
 
-/* .main-content:hover {
-  transform: scale(1.2);
-  transition: all .5s;
-  overflow: hidden;
-} */
+.main-content:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
 
 .article {
   grid-area: art;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  align-content: space-between;
-  margin-bottom: 25px;
+  justify-content: space-around;
+  margin-bottom: 40px;
   background-color: #E8E8E8;
 }
 
-.box {
-  width: 250px;
-  height: 250px;
-  border 1px solid red;
+.item {
+  position: relative;
+  padding: 12px;
+}
+
+.item:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.item img {
+  margin-top: 10px;
+  height: 200px;
+  width: 300px;
+}
+
+.item h3 {
+  text-align: center;
 }
 
 .fixtures {
   grid-area: fix;
   border-style: double;
   margin-left: 5px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   overflow: scroll;
   background-color: #E8E8E8;
 }
 
-.footer-box{
-  grid-area: ft;
-  font-size: 2em;
-  background-color: #4169E1;
-  color: white;
-  text-decoration: underline;
+.fixtures img {
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
