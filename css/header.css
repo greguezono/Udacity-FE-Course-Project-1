@@ -2,7 +2,7 @@
   overflow: hidden;
   background-color: #4169E1;
   color: white;
-  font-family: impact;
+  font-family: Palatino;
   margin-left: 5px;
   margin-right: 5px;
   padding-top: 20px;
@@ -28,6 +28,7 @@
   line-height: 25px;
   text-decoration: underline;
   pointer-events: none;
+  font-family: American Typewriter;
 }
 
 .header-box a:hover {
