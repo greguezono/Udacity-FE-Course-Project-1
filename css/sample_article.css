@@ -6,28 +6,34 @@
   grid-template-columns: auto;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
-  "head"
-  "img"
-  "main";
+  "title title"
+  "img art1"
+  "art2 art2";
   margin-left: 5px;
   margin-right: 5px;
   font-family: Palatino;
   background-color: #F5F5F5;
 }
 
-h1 {
-  grid-area: head;
+.title {
+  grid-area: title;
+  background-color: #E8E8E8;
   text-align: center;
+  font-weight: bold;
+  color: #4169E1;
 }
 
-.pl-logo {
+.image {
+  display: block;
   grid-area: img;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  width: 90%;
   height: auto;
 }
 
-p {
-  grid-area: main;
+.art1 {
+  grid-area: art1;
+}
+
+.art2 {
+  grid-area: art2;
 }
